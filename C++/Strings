@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	// Complete the program
+    string a;
+    string b;
+    string aa;
+    string bb;
+    cin>> a;
+    cin>>b;
+    
+    
+    int size_a = a.size();
+    int size_b = b.size();
+    for(int i = 1; i < size_a ; i++){
+        aa = aa + a[i];
+    }
+    for(int i = 1; i < size_b ; i++){
+        bb = bb + b[i];
+    }
+    cout<< a.size()<<" "<<b.size()<<endl;
+    cout<<a+b<<endl;
+    cout<<b[0]+aa<<" "<<a[0]<<bb;
+    return 0;
+}
