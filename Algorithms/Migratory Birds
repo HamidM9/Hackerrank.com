@@ -1,0 +1,40 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+from collections import Counter
+#
+# Complete the 'migratoryBirds' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER_ARRAY arr as parameter.
+#
+
+def migratoryBirds(arr):
+    count = Counter(arr)
+    most_common_type, count_of_most_common_type = count.most_common(1)[0]
+    
+    
+    same_frequency_types = [bird_type for bird_type, count in count.items() if count == count_of_most_common_type]
+    return min(same_frequency_types)
+
+    
+    
+    
+    
+    
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    arr_count = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+    
+    result = migratoryBirds(arr)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
