@@ -1,3 +1,3 @@
 # Hackerrank.com
-This repository is made up of Hackerrank.com exercises.
+This repository is made up of solutions to Hackerrank.com exercises.
 Enjoy.
