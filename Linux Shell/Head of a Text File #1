@@ -1,0 +1,4 @@
+while read file; do
+    echo $file >> file.txt
+done
+head -n 20 < file.txt
