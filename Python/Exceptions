@@ -1,0 +1,13 @@
+def exceptions(a, b):
+    
+    try:
+        print(int(a) // int(b))
+    except (ZeroDivisionError, ValueError) as e:
+        print('Error Code:',e)
+    
+if __name__ == '__main__':
+    T = int(input())
+    for i in range(T):
+        a, b = input().split()
+        
+        exceptions(a, b)
